@@ -9,7 +9,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 shrink-0 sticky top-14 self-start h-[calc(100vh-3.5rem)] overflow-y-auto border-r border-[hsl(var(--sidebar-border))] bg-[hsl(var(--sidebar))] py-8 px-4">
+    <aside className="hidden lg:block w-64 shrink-0 sticky top-14 self-start h-[calc(100vh-3.5rem)] overflow-y-auto border-r border-[hsl(var(--sidebar-border))] bg-[hsl(var(--sidebar))] py-8 px-4">
       <p className="px-3 mb-4 text-xs font-bold tracking-widest uppercase text-[hsl(var(--muted-foreground))]">
         Guide Steps
       </p>
