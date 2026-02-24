@@ -7,7 +7,6 @@ export interface StepMeta {
 export const STEPS: StepMeta[] = [
   { slug: "1", step: "1", title: "Decide Which Peptides" },
   { slug: "2", step: "2", title: "Procure Peptides and Supplies" },
-  { slug: "2a", step: "2A", title: "Storage" },
   { slug: "3", step: "3", title: "Decide on Dose" },
   { slug: "4", step: "4", title: "Reconstitute" },
   { slug: "5", step: "5", title: "Draw Into Needle" },
