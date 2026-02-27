@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageSquare } from "lucide-react";
 import { STEPS } from "@/lib/steps";
 import { cn } from "@/lib/utils";
 
@@ -64,7 +64,16 @@ export function MobileNav() {
         </nav>
 
         <div className="mt-8 pt-6 border-t border-[hsl(var(--border))]">
-          <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">
+          <a
+            href="https://forms.gle/ivbStBnAymg4vYDT9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg px-3 py-3 text-base text-[hsl(var(--muted-foreground))] hover:opacity-100 hover:bg-[hsl(var(--muted))] hover:text-[hsl(var(--foreground))] transition-all"
+          >
+            <MessageSquare className="w-5 h-5 shrink-0 text-cyan-500 animate-pulse" />
+            <span>Feedback</span>
+          </a>
+          <p className="mt-4 px-3 text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">
             For educational purposes only. Consult a healthcare professional
             before self-administering any substance.
           </p>
