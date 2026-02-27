@@ -5,13 +5,14 @@ export interface StepMeta {
 }
 
 export const STEPS: StepMeta[] = [
-  { slug: "1", step: "1", title: "Decide Which Peptides" },
-  { slug: "2", step: "2", title: "Procure Peptides and Supplies" },
-  { slug: "3", step: "3", title: "Decide on Dose" },
-  { slug: "4", step: "4", title: "Reconstitute" },
-  { slug: "5", step: "5", title: "Draw Into Needle" },
-  { slug: "6", step: "6", title: "Inject" },
-  { slug: "7", step: "7", title: "Dispose Safely" },
+  { slug: "1", step: "1", title: "Overview" },
+  { slug: "2", step: "2", title: "Choose Your Peptides" },
+  { slug: "3", step: "3", title: "Procure Peptides and Supplies" },
+  { slug: "4", step: "4", title: "Decide on Dose" },
+  { slug: "5", step: "5", title: "Reconstitute" },
+  { slug: "6", step: "6", title: "Draw Into Needle" },
+  { slug: "7", step: "7", title: "Inject" },
+  { slug: "8", step: "8", title: "Dispose Safely" },
 ];
 
 export function getStepIndex(slug: string): number {

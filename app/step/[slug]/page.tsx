@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { STEPS, getStepIndex } from "@/lib/steps";
 import { TutorialLayout } from "@/components/TutorialLayout";
 import { StepNav } from "@/components/StepNav";
@@ -83,7 +84,7 @@ export default function StepPage({ params }: PageProps) {
 
       {/* MDX content */}
       <div className="prose">
-        <MDXRemote source={content} components={mdxComponents} />
+        <MDXRemote source={content} components={mdxComponents} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
 
       {/* Step navigation */}
