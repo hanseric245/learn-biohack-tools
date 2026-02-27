@@ -35,3 +35,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 Basic Peptide Supplies/
+
+# Source/working documents — not for repo
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pages
+*.numbers
+*.key
+*.zip
